@@ -3,4 +3,10 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+
+    <color name="moneyGreen">#70D787</color>
+    <color name="addBlue">#0091D9</color>
+    <color name="expensesOrange">#F48220</color>
+    <color name="categoryGray">#69757A</color>
+    <color name="overspentRed">#E85B51</color>
 </resources>
