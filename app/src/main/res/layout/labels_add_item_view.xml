@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addItemView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:fontFamily="@font/lato_bold"
+    android:text="@string/add_item"
+    android:textAllCaps="true"
+    android:textColor="@color/moneyGreen"
+    android:textSize="@dimen/normal_text">
+
+</TextView>
