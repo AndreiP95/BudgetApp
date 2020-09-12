@@ -48,3 +48,7 @@ L
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 g
 7app/src/main/java/com/example/budgetapp/MainActivity.kt,2\8\28364b69bdadebf7478594c81dfb42f67dcfa634
+R
+"app/src/main/res/values/dimens.xml,c\3\c3c1811dec2dbad2deeafb9aad505ca9631da740
+S
+#app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
