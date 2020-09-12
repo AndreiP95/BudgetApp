@@ -14,6 +14,7 @@
         android:weightSum="4">
 
         <TextView
+            android:id="@+id/titleView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -22,6 +23,7 @@
             tools:text="Transportation" />
 
         <TextView
+            android:id="@+id/amountView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="2"
