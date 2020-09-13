@@ -5,7 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
+    android:layout_marginEnd="10dp"
     android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
     android:weightSum="4">
 
     <TextView
@@ -15,6 +20,7 @@
         android:layout_weight="2"
         android:fontFamily="@font/lato_bold"
         android:textColor="@color/addBlue"
+        android:textSize="@dimen/large_text"
         tools:text="Transportation" />
 
     <TextView
@@ -24,6 +30,7 @@
         android:layout_weight="2"
         android:fontFamily="@font/lato_regular"
         android:textAlignment="textEnd"
+        android:textSize="@dimen/large_text"
         tools:text="Planned"
 
         />

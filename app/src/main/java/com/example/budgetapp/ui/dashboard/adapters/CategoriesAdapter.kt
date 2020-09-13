@@ -12,12 +12,13 @@ import kotlinx.android.synthetic.main.category_title_view.view.*
 import kotlinx.android.synthetic.main.category_view.view.*
 import kotlinx.android.synthetic.main.labels_add_item_view.view.*
 
-class CategoryAdapter(private val categories: ArrayList<Category>?, private val context: Context?) :
+class CategoryAdapter(private val categories: ArrayList<Category>, private val context: Context?) :
     RecyclerView.Adapter<CategoryAdapter.ViewHolder>() {
 
     fun updateCategories(newCategories: ArrayList<Category>) {
-        categories?.clear()
-        categories?.addAll(newCategories)
+        categories.clear()
+        categories.addAll(newCategories)
+        notifyDataSetChanged()
     }
 
     private fun addNewLabelToCategory() {
@@ -25,13 +26,11 @@ class CategoryAdapter(private val categories: ArrayList<Category>?, private val 
     }
 
     override fun onBindViewHolder(holder: CategoryAdapter.ViewHolder, position: Int) {
-        categories?.let { labels ->
-            val category: Category = categories.get(position)
-            holder.categoryTitle.text = category.name
-            holder.labelsRecyclerView.layoutManager = LinearLayoutManager(context)
-            holder.labelsRecyclerView.adapter = LabelsAdapter(category.labels)
-            holder.categoryAddButton.setOnClickListener { addNewLabelToCategory() }
-        }
+        val category: Category = categories.get(position)
+        holder.categoryTitle.text = category.name
+        holder.labelsRecyclerView.layoutManager = LinearLayoutManager(context)
+        holder.labelsRecyclerView.adapter = LabelsAdapter(category.labels)
+        holder.categoryAddButton.setOnClickListener { addNewLabelToCategory() }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CategoryAdapter.ViewHolder {
@@ -40,7 +39,7 @@ class CategoryAdapter(private val categories: ArrayList<Category>?, private val 
         return ViewHolder(categoryView)
     }
 
-    override fun getItemCount(): Int = if (categories.isNullOrEmpty()) 0 else categories.size
+    override fun getItemCount(): Int = categories.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
