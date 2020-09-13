@@ -34,10 +34,6 @@ A
 local.properties,0\7\0712df971a99ac4d2fccb8e0fb19f377f3374cca
 Y
 )app/src/main/res/navigation/nav_graph.xml,b\a\baffce053da291d96fb575a09f2bbe9aaa9c4be9
-o
-?app/src/main/java/com/example/budgetapp/ui/DashboardFragment.kt,a\e\ae5d57aaae17b5acb1b1a4ea8fa205504c1e9c83
-p
-@app/src/main/java/com/example/budgetapp/ui/DashboardViewModel.kt,9\2\92e37c7334aef6caf3b8cd7101e3b8b5d71bd493
 @
 app/build.gradle,f\4\f4a01d6a4fcb971362ec00a83903fd3902f52164
 T

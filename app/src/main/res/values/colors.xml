@@ -8,5 +8,7 @@
     <color name="addBlue">#0091D9</color>
     <color name="expensesOrange">#F48220</color>
     <color name="categoryGray">#69757A</color>
+    <color name="pureWhite">#ffffff</color>
+    <color name="backgroundLightGray">#F6F7F9</color>
     <color name="overspentRed">#E85B51</color>
 </resources>

@@ -3,6 +3,7 @@ package com.example.budgetapp.ui.dashboard.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.budgetapp.R
 import com.example.budgetapp.repository.model.Label
@@ -31,7 +32,7 @@ class LabelsAdapter(private val labels: List<Label>?) :
     override fun getItemCount(): Int = if (labels.isNullOrEmpty()) 0 else labels.size
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val labelTitle = itemView.titleView
-        val labelAmount = itemView.amountView
+        val labelTitle: TextView = itemView.titleView
+        val labelAmount: TextView = itemView.amountView
     }
 }
