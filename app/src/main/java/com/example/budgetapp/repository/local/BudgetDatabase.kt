@@ -6,10 +6,10 @@ import com.example.budgetapp.repository.model.Category
 import com.example.budgetapp.repository.model.Label
 
 @Database(
-    entities = arrayOf(
+    entities = [
         Category::class,
         Label::class
-    ), version = 1
+    ], version = 1
 )
 abstract class BudgetDatabase : RoomDatabase() {
     abstract fun categoryDao(): CategoryDao
