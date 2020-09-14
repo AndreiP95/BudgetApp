@@ -30,21 +30,21 @@ class DashboardFragment : Fragment() {
 
     private fun randomLabels(): List<Label> {
         val randomLabel = ArrayList<Label>()
-        randomLabel.add(Label("Random", 123.0))
-        randomLabel.add(Label("Random", 123.0))
-        randomLabel.add(Label("Random", 123.0))
-        randomLabel.add(Label("Random", 123.0))
+        randomLabel.add(Label(0, "Random", 123.0))
+        randomLabel.add(Label(1, "Random", 123.0))
+        randomLabel.add(Label(2, "Random", 123.0))
+        randomLabel.add(Label(3, "Random", 123.0))
 
 
         return randomLabel
     }
 
     private fun mockCategories() {
-        categories.add(Category("Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category("Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category("Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category("Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category("Money", 123.0, "Planned", randomLabels()))
+        categories.add(Category(0, "Money", 123.0, "Planned", randomLabels()))
+        categories.add(Category(1, "Money", 123.0, "Planned", randomLabels()))
+        categories.add(Category(2, "Money", 123.0, "Planned", randomLabels()))
+        categories.add(Category(3, "Money", 123.0, "Planned", randomLabels()))
+        categories.add(Category(4, "Money", 123.0, "Planned", randomLabels()))
 
     }
 
