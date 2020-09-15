@@ -1,4 +1,4 @@
-package com.example.budgetapp.repository.local
+package com.example.budgetapp.repository.local.room
 
 import androidx.room.Delete
 import androidx.room.Insert
@@ -7,14 +7,14 @@ import com.example.budgetapp.repository.model.Category
 
 interface CategoryDao {
     @Query("SELECT * FROM category")
-    fun getAll(): List<Category>
+    suspend fun getAll(): List<Category>
 
     @Query("SELECT * FROM category WHERE name LIKE :name LIMIT 1")
-    fun findCategoryByName(name: String): Category
+    suspend fun findCategoryByName(name: String): Category
 
     @Insert
-    fun insertAll(vararg categories: Category)
+    suspend fun insertAll(vararg categories: Category)
 
     @Delete
-    fun delete(category: Category)
+    suspend fun delete(category: Category)
 }

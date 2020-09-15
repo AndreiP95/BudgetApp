@@ -1,4 +1,4 @@
-package com.example.budgetapp.repository.local
+package com.example.budgetapp.repository.local.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

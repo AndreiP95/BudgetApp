@@ -1,4 +1,4 @@
-package com.example.budgetapp.repository.local
+package com.example.budgetapp.repository.local.room
 
 import androidx.room.Delete
 import androidx.room.Insert

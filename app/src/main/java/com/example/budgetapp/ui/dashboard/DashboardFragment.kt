@@ -5,15 +5,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.budgetapp.databinding.DashboardFragmentBinding
 import com.example.budgetapp.repository.model.Category
 import com.example.budgetapp.repository.model.Label
 import com.example.budgetapp.ui.dashboard.adapters.CategoryAdapter
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class DashboardFragment : Fragment() {
 
-    private lateinit var viewModel: DashboardViewModel
+    private val viewModel: DashboardViewModel by viewModels()
     private var binding: DashboardFragmentBinding? = null
     private val budgetAdapter = CategoryAdapter(ArrayList(), context)
 
