@@ -20,7 +20,8 @@ class DashboardFragment : Fragment() {
     private var binding: DashboardFragmentBinding? = null
     private val budgetAdapter = CategoryAdapter(ArrayList(), context)
 
-    private val categories: ArrayList<Category> = ArrayList()
+    private val categories: Array<Category> =
+        Array(5, { i -> Category(i.toLong(), "Money", 123.0, "Planned") })
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,38 +34,33 @@ class DashboardFragment : Fragment() {
 
     private fun randomLabels(): List<Label> {
         val randomLabel = ArrayList<Label>()
-        randomLabel.add(Label(0, "Random", 123.0))
-        randomLabel.add(Label(1, "Random", 123.0))
-        randomLabel.add(Label(2, "Random", 123.0))
-        randomLabel.add(Label(3, "Random", 123.0))
+        randomLabel.add(Label(0, 0, "Random", 123.0))
+        randomLabel.add(Label(1, 1, "Random", 123.0))
+        randomLabel.add(Label(2, 2, "Random", 123.0))
+        randomLabel.add(Label(3, 3, "Random", 123.0))
 
 
         return randomLabel
     }
 
     private fun mockCategories() {
-        categories.add(Category(0, "Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category(1, "Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category(2, "Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category(3, "Money", 123.0, "Planned", randomLabels()))
-        categories.add(Category(4, "Money", 123.0, "Planned", randomLabels()))
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         mockCategories()
+        viewModel.initData(categories)
         setupUI()
     }
 
 
     private fun setupUI() {
+
         binding?.categoriesRecyclerView?.let {
             it.layoutManager = LinearLayoutManager(context)
             it.adapter = budgetAdapter
-            budgetAdapter.updateCategories(categories)
+            budgetAdapter.updateCategories(categories.toCollection(ArrayList()))
         }
-
     }
 
     override fun onDestroyView() {

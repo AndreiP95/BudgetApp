@@ -29,7 +29,6 @@ class CategoryAdapter(private val categories: ArrayList<Category>, private val c
         val category: Category = categories.get(position)
         holder.categoryTitle.text = category.name
         holder.labelsRecyclerView.layoutManager = LinearLayoutManager(context)
-        holder.labelsRecyclerView.adapter = LabelsAdapter(category.labels)
         holder.categoryAddButton.setOnClickListener { addNewLabelToCategory() }
     }
 

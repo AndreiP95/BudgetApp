@@ -14,12 +14,12 @@ import javax.inject.Singleton
 object RoomModule {
     @Singleton
     @Provides
-    fun provideRoomDatabase( // Tell Dagger-Hilt to create a singleton accessible everywhere in ApplicationCompenent (i.e. everywhere in the application)
+    fun provideRoomDatabase( // Tell Dagger-Hilt to create a singleton accessible everywhere in ApplicationComponent (i.e. everywhere in the application)
         @ApplicationContext app: Context
     ) = Room.databaseBuilder(
         app,
         BudgetDatabase::class.java,
-        "budget-database"
+        "budget"
     ).build()
 
     @Singleton

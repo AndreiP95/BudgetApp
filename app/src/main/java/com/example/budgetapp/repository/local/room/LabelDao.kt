@@ -1,10 +1,12 @@
 package com.example.budgetapp.repository.local.room
 
+import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.example.budgetapp.repository.model.Label
 
+@Dao
 interface LabelDao {
 
     @Query("SELECT * FROM label")

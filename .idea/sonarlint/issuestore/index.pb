@@ -42,9 +42,33 @@ L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
 <
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
-g
-7app/src/main/java/com/example/budgetapp/MainActivity.kt,2\8\28364b69bdadebf7478594c81dfb42f67dcfa634
 R
 "app/src/main/res/values/dimens.xml,c\3\c3c1811dec2dbad2deeafb9aad505ca9631da740
 S
 #app/src/main/res/values/strings.xml,d\2\d2281fbb3027de2722081a53408dd77628bf080e
+q
+Aapp/src/main/java/com/example/budgetapp/repository/model/Label.kt,c\1\c18056cc96bdabb356f05407d2a6340e8685d9ff
+t
+Dapp/src/main/java/com/example/budgetapp/repository/model/Category.kt,4\5\4538408ef0181d389d77a619c22aa6b05e60ea78
+‚
+Rapp/src/main/java/com/example/budgetapp/ui/dashboard/adapters/CategoriesAdapter.kt,1\0\102d9131683e60671a59f42d723fbeac2d948bc7
+
+Oapp/src/main/java/com/example/budgetapp/repository/local/room/BudgetDatabase.kt,8\a\8a1f99979a711e7d731098f9bc1ffb46a62c4a67
+|
+Lapp/src/main/java/com/example/budgetapp/repository/local/room/CategoryDao.kt,f\7\f7464e48d5530158ccb81ec2ae9a5c35ea9479b4
+y
+Iapp/src/main/java/com/example/budgetapp/repository/local/room/LabelDao.kt,6\a\6a5106067e260abb09f369b44994b6ad91cc4be2
+{
+Kapp/src/main/java/com/example/budgetapp/repository/local/room/RoomModule.kt,6\f\6f09067ef22a40e12fc2de4f028c2dadde0ceb21
+{
+Kapp/src/main/java/com/example/budgetapp/repository/local/LocalRepository.kt,2\c\2c011c6003beb565b078fb0d47d6546ba8c37dca
+j
+:app/src/main/java/com/example/budgetapp/BaseApplication.kt,b\6\b63a201a283c23a9d11a7139f2f214d5a18e0c3e
+j
+:app/src/main/java/com/example/budgetapp/ui/MainActivity.kt,8\0\80b8ab173051d32f0220e163a01e3449e5064ef0
+y
+Iapp/src/main/java/com/example/budgetapp/ui/dashboard/DashboardFragment.kt,a\f\af8e513961e78dcf03053e3c46afe4f0199d99b4
+z
+Japp/src/main/java/com/example/budgetapp/ui/dashboard/DashboardViewModel.kt,c\a\ca5b1514a3d255b8b9a413d97c1d24ff8bd0fe0a
+~
+Napp/src/main/java/com/example/budgetapp/repository/model/CategoryWithLabels.kt,9\b\9b4a43a62f3292ef1d0eeba9728bad48150ed803
