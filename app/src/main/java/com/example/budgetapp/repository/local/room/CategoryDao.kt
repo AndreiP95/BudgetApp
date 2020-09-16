@@ -1,10 +1,10 @@
 package com.example.budgetapp.repository.local.room
 
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.Query
+import androidx.room.*
 import com.example.budgetapp.repository.model.Category
+import com.example.budgetapp.repository.model.CategoryWithLabels
 
+@Dao
 interface CategoryDao {
     @Query("SELECT * FROM category")
     suspend fun getAll(): List<Category>
@@ -14,6 +14,10 @@ interface CategoryDao {
 
     @Insert
     suspend fun insertAll(vararg categories: Category)
+
+    @Transaction
+    @Query("SELECT * FROM category")
+    suspend fun getLabelsForCategory(): List<CategoryWithLabels>
 
     @Delete
     suspend fun delete(category: Category)

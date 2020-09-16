@@ -6,9 +6,8 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "category")
 data class Category(
-    @PrimaryKey val categoryId: Int = 0,
-    @ColumnInfo(name = "name") val name: String,
-    @ColumnInfo(name = "amount") val amount: Double,
-    @ColumnInfo(name = "status") val status: String,
-    @ColumnInfo(name = "labels") val labels: List<Label>?
+    @PrimaryKey val categoryId: Long = 0,
+    @ColumnInfo(name = "name") val name: String = "",
+    @ColumnInfo(name = "amount") val amount: Double = 0.0,
+    @ColumnInfo(name = "status") val status: String = ""
 )
