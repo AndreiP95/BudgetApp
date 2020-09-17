@@ -24,4 +24,7 @@ class DashboardViewModel @ViewModelInject constructor(
 
     suspend fun getAllCategories(): List<Category> = localRepo.getAllCategories()
 
+    suspend fun deleteCategory(category: Category) = localRepo.deleteCategory(category)
+
+
 }
