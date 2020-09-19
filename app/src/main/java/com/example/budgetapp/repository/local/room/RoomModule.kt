@@ -25,7 +25,7 @@ object RoomModule {
     @Singleton
     @Provides
     fun provideCategoryDao(db: BudgetDatabase) =
-        db.categoryDao()// The reason we can implement a Dao for the database
+        db.categoryDao()
 
     @Singleton
     @Provides
