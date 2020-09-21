@@ -22,10 +22,14 @@ object RoomModule {
         "budget"
     ).build()
 
+    // Tell Dagger-Hilt to create a singleton accessible everywhere in ApplicationComponent (i.e. everywhere in the application)
+
     @Singleton
     @Provides
     fun provideCategoryDao(db: BudgetDatabase) =
         db.categoryDao()
+
+    // Tell Dagger-Hilt to create a singleton accessible everywhere in ApplicationComponent (i.e. everywhere in the application)
 
     @Singleton
     @Provides
